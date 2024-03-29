@@ -22,5 +22,6 @@ public class Fibonacciseries {
         System.out.println("Enter a number of terms");
         int n = s.nextInt();
         printfibo(n);
+        s.close();
     }
 }
