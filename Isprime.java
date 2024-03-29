@@ -25,5 +25,7 @@ public class Isprime {
             System.out.println("Prime");
         else
             System.out.println("Not prime");
+
+        s.close();
     }
 }
