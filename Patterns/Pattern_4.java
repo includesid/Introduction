@@ -19,9 +19,4 @@ public class Pattern_4 {
     }
 }
 // Output:
-
-// * * * * *
-// * * * *
-// * * *
-// * *
-// *
+// reverse left half pyramid
