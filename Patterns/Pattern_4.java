@@ -19,6 +19,7 @@ public class Pattern_4 {
     }
 }
 // Output:
+
 // * * * * *
 // * * * *
 // * * *
