@@ -28,6 +28,7 @@ public class GCD_LCM {
         int b = s.nextInt();
         System.out.println("LCM of two numbers are: " + lcm(a, b));
         System.out.println("HCF of two numbers " + hcf(a, b));
+        s.close();
     }
 }
 // we can do this queation by recursion also.
