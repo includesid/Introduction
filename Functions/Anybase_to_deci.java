@@ -14,5 +14,6 @@ public class Anybase_to_deci {
             a = a / 10;
         }
         System.out.println(numindec);
+        s.close();
     }
 }
