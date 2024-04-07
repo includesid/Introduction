@@ -9,7 +9,6 @@ public class Deci_to_anybase {
         StringBuilder sb = new StringBuilder("");
 
         int rem;
-        int q;
 
         while (n != 0) {
             rem = n % b;
