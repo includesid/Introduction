@@ -19,6 +19,6 @@ public class SpanofArray {
                 min = a[i];
         }
         System.out.println(max - min);
-
+        s.close();
     }
 }
