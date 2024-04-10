@@ -14,17 +14,9 @@ public class Anybase_addition {
 
         StringBuilder str = new StringBuilder();
         int c = 0;
-        while (max != 0) {
-            if (max != 0)
-                d1 = max % 10;
-            else
-                d1 = 0;
-
-            if (min != 0)
-                d2 = min % 10;
-            else
-                d2 = 0;
-
+        while (max > 0 || min > 0 || c > 0) {
+            d1 = max % 10;
+            d2 = min % 10;
             res = (d1 + d2 + c) % b;
             c = (d1 + d2 + c) / b;
             str = str.append(res);
@@ -33,8 +25,7 @@ public class Anybase_addition {
             min = min / 10;
 
         }
-        if (c == 1)
-            str.append('1');
+
         System.out.println(str.reverse());
         s.close();
     }
