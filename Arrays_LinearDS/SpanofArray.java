@@ -1,4 +1,3 @@
-package Arrays_LinearDS;
 
 import java.util.Scanner;
 
