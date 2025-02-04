@@ -16,7 +16,7 @@ public class SubstOfTwoNum {
         for (int i = 0; i < n2; i++)
             a2[i] = s.nextInt();
 
-        int i = n1;
+        // int i = n1;
         int j = n2;
         int c = 10;
         int a = n1 - 1;
