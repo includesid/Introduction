@@ -58,6 +58,14 @@ class linkedlist{
         tmp.next = newNode;
     }
     
+    public void deletefromfront(int value){
+        if(head.val == value){
+            Node target = head;
+            head = head.next;
+        }
+
+    }
+
     public int getHeadValue() {
         if (head == null) {
             return -1;
