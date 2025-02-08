@@ -1,5 +1,7 @@
 package LinkedList;
 
+import java.util.LinkedList;
+
 class Node{
     int val;
     public Node next;
@@ -21,6 +23,41 @@ class linkedlist{
         
         head = newNode;
     }
+
+    public void insertAtEnd(int value){
+        Node lastnode = new Node(value);
+        
+        if(head == null){
+            head = lastnode;
+        }
+        else{
+            Node tmp = head;
+            while(tmp.next != null){
+                tmp = tmp.next;
+            }
+            
+            tmp.next = lastnode;
+            lastnode.next = null;
+        }
+        
+    }
+    public void insertAtKpos(int k, int value){
+        
+        Node newNode = new Node(value);
+        
+        Node tmp = head;
+        
+        if(tmp == null) {
+        head = newNode;
+        return;
+    }
+        
+        for(int i = 1; i<k; i++){
+            tmp = tmp.next;
+        }
+        newNode.next = tmp.next;
+        tmp.next = newNode;
+    }
     
     public int getHeadValue() {
         if (head == null) {
@@ -29,6 +66,15 @@ class linkedlist{
             return head.val;
         }
     }
+
+    public void printLL(){
+        Node tmp = head;
+        while(tmp != null){
+            System.out.print(tmp.val + " ");
+            tmp = tmp.next;
+        }
+    }
+
 }
 
 
@@ -41,6 +87,13 @@ public class LinearLinkedList {
         
         list.insertFront(2);
         System.out.println("The value at the head is: " + list.getHeadValue());
+        
+        list.insertAtEnd(56);
+        list.printLL();
+        System.out.println();
+        
+        list.insertAtKpos(2, 10);
+        list.printLL();
     }
 }
 
