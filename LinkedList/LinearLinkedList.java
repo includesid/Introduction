@@ -65,6 +65,25 @@ class linkedlist{
         }
 
     }
+    public void deletefromanyposition(int value){
+        if (head.val == value) {
+            Node targetNode = head;
+            head = head.next;
+            return;
+        }
+        Node iter = head;
+        
+        while (iter.next != null) {
+            if (iter.next.val == value) {
+                // Set next of iter
+                // To next to next of iter
+                iter.next = iter.next.next;
+                
+                return;
+            }
+            iter = iter.next;
+        }
+    }
 
     public int getHeadValue() {
         if (head == null) {
