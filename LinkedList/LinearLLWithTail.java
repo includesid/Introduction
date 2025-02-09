@@ -13,6 +13,11 @@ class Node{
 class linkedlist{
     public Node head;
     public Node tail;
+
+    public linkedlist(){
+        head = null;
+        tail = null;
+    }
     
     public void insertAtEnd(int val){
         
